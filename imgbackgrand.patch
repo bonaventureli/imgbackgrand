@@ -1,0 +1,7 @@
+setWindowFlags(Qt::FramelessWindowHint);//set no top widge
+QPalette pal;
+QString filename = QDir::currentPath()+ "/img/456.png";
+QPixmap pixmap(filename);
+pal.setBrush(QPalette::Window,QBrush(pixmap));
+setPalette(pal);
+
